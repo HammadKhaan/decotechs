@@ -9,7 +9,9 @@ import MobileServices from '../screen/MobileServices';
 import ITServices from '../screen/ITServices';
 import GraphicServices from '../screen/GraphicServices';
 import SEOServices from '../screen/SEOServices';
+import Successful from '../screen/Successful';
 import {createStackNavigator} from '@react-navigation/stack';
+import Login from '../screen/Login';
 
 const Stack = createStackNavigator();
 const AppNavigator = () => {
@@ -23,6 +25,8 @@ const AppNavigator = () => {
       <Stack.Screen name="IT" component={ITServices} />
       <Stack.Screen name="Graphic" component={GraphicServices} />
       <Stack.Screen name="SEO" component={SEOServices} />
+      <Stack.Screen name="Successful" component={Successful} />
+      <Stack.Screen name="Login" component={Login} />
     </Stack.Navigator>
   );
 };

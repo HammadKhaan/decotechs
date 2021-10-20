@@ -39,18 +39,34 @@ const ServicesComp = ({title, logo, navigation}) => {
       </View>
       <View style={{marginVertical: 20, padding: 20}}>
         <View style={styles.inputView}>
-          <TextInput placeholder="Name"></TextInput>
+          <TextInput
+            placeholder="Name"
+            placeholderTextColor="grey"
+            style={{color: 'black'}}></TextInput>
         </View>
         <View style={styles.inputView}>
-          <TextInput placeholder="Email Address"></TextInput>
+          <TextInput
+            placeholder="Email Address"
+            placeholderTextColor="grey"
+            style={{color: 'black'}}></TextInput>
         </View>
         <View style={styles.inputView}>
-          <TextInput placeholder="Phone"></TextInput>
+          <TextInput
+            placeholder="Phone"
+            placeholderTextColor="grey"
+            style={{color: 'black'}}
+            keyboardType="numeric"></TextInput>
         </View>
         <View style={styles.inputView}>
-          <TextInput placeholder="Amount"></TextInput>
+          <TextInput
+            placeholder="Amount"
+            placeholderTextColor="grey"
+            style={{color: 'black'}}
+            keyboardType="numeric"></TextInput>
         </View>
-        <TouchableOpacity style={styles.textView}>
+        <TouchableOpacity
+          style={styles.textView}
+          onPress={() => navigation.navigate('Successful')}>
           <Text style={styles.text}>Submit</Text>
         </TouchableOpacity>
       </View>

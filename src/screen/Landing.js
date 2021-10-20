@@ -22,7 +22,7 @@ const Landing = ({navigation}) => {
         <View style={styles.button}>
           <TouchableOpacity
             style={styles.textView}
-            onPress={() => navigation.navigate('Home')}>
+            onPress={() => navigation.navigate('Login')}>
             <Text style={styles.text}>Get Started</Text>
           </TouchableOpacity>
         </View>

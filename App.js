@@ -26,6 +26,7 @@ const App = () => {
   return (
     // <Landing />
     <NavigationContainer>
+      <StatusBar backgroundColor="#1A99DE" barStyle="light-content" />
       <AppNavigator />
     </NavigationContainer>
   );
